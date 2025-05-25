@@ -6,7 +6,6 @@ var program;
 
 var points = [];
 var colors = [];
-//const PI = 3.1415927;
 var thetaLoc;
 var scaleLoc;
 var translateLoc;
@@ -32,12 +31,12 @@ var fixed_point = [0.0, 0.0, 0.0];
 var axis = [1.0, 1.0, 0.0];
 
 function main() {
-  var canvas = document.getElementById("gl-canvas");
+var canvas = document.getElementById("gl-canvas");
 
-  gl = canvas.getContext('webgl2');
-  if (!gl) { alert("WebGL 2.0 isn't available"); }
+gl = canvas.getContext('webgl2');
+if (!gl) { alert("WebGL 2.0 isn't available"); }
 
-  var points_O = [
+var points_O = [
     // O Front Points
     vec3(-0.9, 0, 0.05),
     vec3(-0.8, 0, 0.05),
